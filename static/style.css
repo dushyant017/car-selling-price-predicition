@@ -1,0 +1,73 @@
+body{
+    background-color: lightslategray;
+    text-align: center;
+    padding: 0px
+}
+#seventh{
+    font-size: 18px;
+    width: 100px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+}
+#seventh:hover{
+    background-color: darkgray;
+}
+#fifth{
+    width: 99px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 18px;
+}
+#fifth:hover{
+    background-color: darkgray;
+}
+#sixth{
+    width: 99px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 18px;
+}
+#sixth:hover{
+    background-color: darkgray;
+}
+#eighth{
+    width: 120px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 18px;
+}
+#eighth:hover{
+    background-color: darkcyan;
+}
+#first {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+#second {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+#third {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+#fourth {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+.side{
+    display: flex;
+    align-items:center;
+
+}

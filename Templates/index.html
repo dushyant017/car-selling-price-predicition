@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div id="all">
+        <form action="{{url_for('predict')}}" method="post">
+            <h2>Car Selling Price prediction</h2>
+            <div class="side">
+                <h3>Year of Purchase</h3>
+                <input type="Year" id="first" name="Year" required="required">
+                
+            </div>
+            <div class="side">
+                <h3>Present Showroom Price in lakhs</h3><br>
+                <input type="number" id="second" name="Present_price" required="required">
+            </div>
+            <div class="side">
+                <h3>Kilometers Driven</h3><br>
+                <input type="number" name="kms_Driven" id="third" required="required">
+            </div>
+            <div class="side">
+                <h3>Number of previous owners</h3><br>
+                <input type="number" id="fourth" name="owner" required="required">
+            </div>
+            <div class="side">
+                <h3>Fuel type</h3><br>
+                <select name="Fuel" id="fifth" required="required">
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="CNG">CNG</option>
+                </select>
+            </div>
+            <div class="side">
+                <h3>Are you A Dealer or Individual</h3><br>
+                <select name="Seller_type" id="sixth" required="required">
+                    <option value="Dealer">Dealer</option>
+                    <option value="Individual">Individual</option>
+                </select>
+            </div>
+            <div class="side">
+                <h3>Transmission Type</h3><br>
+                <select name="Transmission_mannual" id="seventh" required="required">
+                    <option value="Mannual">Mannual</option>
+                    <option value="Automatic">Automatic</option>
+                </select>
+            </div>
+ 
+            <br><br><button id="eighth" type="submit">Calculate the Selling Price</button>
+            <br>
+        </form>
+        <br>
+        <h3>{{ prediction_texts }}</h3>
+    </div>
+</body>
+</html>
